@@ -1,0 +1,20 @@
+body {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 20;
+    background: linear-gradient(to right, #877acf, #54025d);
+    color: rgb(244, 242, 242);
+    text-align: center;
+}
+
+header {
+    margin-top: 200px;
+    padding: 15px;
+}
+
+footer {
+    margin-top: 300px;
+    padding: 10px;
+}
