@@ -215,6 +215,7 @@ Nesta etapa, será realizado:
 Execute o comando `sudo systemctl stop nginx` . Automaticamente, aparecerá uma mensagem no seu webhook do Discord, notificando que o servidor está fora do ar. Após 30 segundos, graças ao systemd, o Nginx reiniciará e o site voltará normalmente
 
   <img src="/images/image 20.png">
+  <img src="/images/image 21.png">
 
 # ✨ Conclusão
 
