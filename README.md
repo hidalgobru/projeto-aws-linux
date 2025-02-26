@@ -1,6 +1,8 @@
 # README do projeto
 
-<img src="/images/Amazon_Web_Services-Logo.wine.png" width="50%" style="vertical-align: middle;">
+<div style="text-align: center;">
+  <img src="/images/Amazon_Web_Services-Logo.wine.png" alt="Logo AWS">
+</div>
 
 # AWS e Linux - Configuração de Servidor Web com Monitoramento
 
