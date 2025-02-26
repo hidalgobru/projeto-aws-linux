@@ -6,7 +6,7 @@ webhook="https://discord.com/api/webhooks/1342203545050415105/qTVPmtLsruwOGEF_by
 
 data=`sudo date +%d/%m/%Y" - "%H:%M:%S`
 
-if sudo grep -q "Site" /var/log/requisicoes.log
+if sudo grep -q "Servidor" /var/log/requisicoes.log
 then
         msg="$data :white_check_mark: Servidor escutando!"
         sudo echo $msg >> /var/log/monitoramento.log
