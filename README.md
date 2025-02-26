@@ -17,7 +17,6 @@ Nesse projeto você irá desenvolver um ambiente de servidor web monitorado, uti
 - Baixar o Visual Studio Code
 
 <aside>
-❗
 
 ## Atenção
 
@@ -175,7 +174,7 @@ A linha include /etc/nginx/conf.d/serverbru.conf corresponde ao caminho do arqui
     <img src="/images/image 16.png">
     
 4. Dentro desta pasta, crie um arquivo html. Logo após crie uma pasta chamada `css` , onde ficará o estilo da página, e nela crie um arquivo css (Os códigos estão nos arquivos index.html e na pasta css)
-5. Reinicie o Nginx executando `sudo sustemctl restart nginx` .
+5. Reinicie o Nginx executando `sudo systemctl restart nginx` .
 
 <img src="/images/image 17.png">
 
