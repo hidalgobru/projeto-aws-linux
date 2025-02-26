@@ -208,9 +208,13 @@ Nesta etapa, será realizado:
 2. Como foi feito com monitoramento.sh, `execute sudo chmod a+x monitoramento.service` para mudar as permissões do arquivo
 3. Atualize todos os serviços do Nginx com `sudo systemctl daemon-reload` e inicie o monitoramento.sh com `sudo systemctl start monitoramento.service` . Após inicar o serviço de monitoramento, aparecerá os alertas no Discord no canal que criou para o webhook
 
+   <img src="/images/image 19.png">
+
 ## Teste a Implementação
 
 Execute o comando `sudo systemctl stop nginx` . Automaticamente, aparecerá uma mensagem no seu webhook do Discord, notificando que o servidor está fora do ar. Após 30 segundos, graças ao systemd, o Nginx reiniciará e o site voltará normalmente
+
+  <img src="/images/image 20.png">
 
 # ✨ Conclusão
 
