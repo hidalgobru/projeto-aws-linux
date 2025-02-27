@@ -202,11 +202,7 @@ Nesta etapa, será realizado:
         ```
         
 2. Navegue até o diretório `/usr/bin/` e crie um arquivo chamado `monitoramento.sh`. Nele estará o script de monitoramento em Bash (O código está disponível em monitoramento.sh)
-<<<<<<< HEAD
     1. Na variável `webhoook` , insira a url do seu webhook do Discord. [Clique aqui](https://www.alura.com.br/artigos/webhooks?srsltid=AfmBOorKb3Z7HXhrjjGNkf2VZiElJ7RNG6T8XYcPo4FQL43CgX0-sYOC) para mais detalhes de como criar um webhook no Discord
-=======
-    1. Na variável `webhoook` , insira a url do seu webhook do Discord. [Clique aqui](https://www.alura.com.br/artigos/webhooks?srsltid=AfmBOorKb3Z7HXhrjjGNkf2VZiElJ7RNG6T8XYcPo4FQL43CgX0-sYOC)  criar um webhook no Discord
->>>>>>> 8c7dd3bdee2b3a97a3016505283415b19eb83995
 3. Se o sistema não estiver configurado no horário do Brasil, execute `timedatectl` para verificar e `sudo timedatectl set-timezone America/Sao_Paulo` para alterar para o nosso fuso horário. Assim, data e horário aparecerão corretos nas notificações do Discord
 4. Após a criação do `monitoramento.sh`, será preciso alterar as permissões para que o mesmo seja executado → execute `sudo chmod a+x monitoramento.sh` (`a+x` adiciona a permissão de execução para todos os usuários.)
     
@@ -228,10 +224,6 @@ Execute o comando `sudo systemctl stop nginx` . Automaticamente, aparecerá uma 
   <img src="/images/image 20.png">
   <img src="/images/image 21.png">
 
-<<<<<<< HEAD
 # ✨ Conclusão 
-=======
-# ✨ Conclusão
->>>>>>> 8c7dd3bdee2b3a97a3016505283415b19eb83995
 
 A principal função desse projeto foi consolidar os meus conhecimentos sobre AWS e Linux. As soluções implementadas, como a configuração do Nginx e a criação do script de monitoramento, resultaram em um sistema funcional, eficiente e automatizado. As dificuldades encontradas durante a implementação foram cruciais para o meu aprendizado em Cloud Computing e DevSecOps.
