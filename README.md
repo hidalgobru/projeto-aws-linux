@@ -10,6 +10,13 @@ Nesse projeto você irá desenvolver um ambiente de servidor web monitorado, uti
 
 **✏️** O passo a passo foi separado em etapas para melhor entendimento e compreensão do projeto.
 
+## Tecnologias utilizadas 
+- [Recursos da AWS](https://aws.amazon.com/pt/free/?gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CXjynKQ_YB-lWNZxkkgTxELyHDMsGvJ6QwNfJrmvmk3v_BJbP5Q-nBoCd84QAvD_BwE&trk=2ee11bb2-bc40-4546-9852-2c4ad8e8f646&sc_channel=ps&ef_id=CjwKCAiAt4C-BhBcEiwA8Kp0CXjynKQ_YB-lWNZxkkgTxELyHDMsGvJ6QwNfJrmvmk3v_BJbP5Q-nBoCd84QAvD_BwE:G:s&s_kwcid=AL!4422!3!561843094929!e!!g!!aws!15278604629!130587771740&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
+- [Discord Webhook](https://support.discord.com/hc/pt-br/articles/228383668-Usando-Webhooks)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Nginx](https://nginx.org/)
+- [Git](https://git-scm.com/downloads)
+
 ## Pré-requisitos
 
 - Criar uma conta na AWS (Confira os [tipos de ofertas da AWS](https://aws.amazon.com/pt/free/?gclid=CjwKCAiAiOa9BhBqEiwABCdG8xlyYVFUTUW4_1hqD1vbhSiF39OfbpYMA3HAzuYfrCGXDkgFgF-icRoCy_YQAvD_BwE&trk=2ee11bb2-bc40-4546-9852-2c4ad8e8f646&sc_channel=ps&ef_id=CjwKCAiAiOa9BhBqEiwABCdG8xlyYVFUTUW4_1hqD1vbhSiF39OfbpYMA3HAzuYfrCGXDkgFgF-icRoCy_YQAvD_BwE:G:s&s_kwcid=AL!4422!3!696214219374!e!!g!!aws!15278604629!130587771740&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all))
