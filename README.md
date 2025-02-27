@@ -224,6 +224,6 @@ Execute o comando `sudo systemctl stop nginx` . Automaticamente, aparecerá uma 
   <img src="/images/image 20.png">
   <img src="/images/image 21.png">
 
-# ✨ Conclusão
+# ✨ Conclusão 
 
 A principal função desse projeto foi consolidar os meus conhecimentos sobre AWS e Linux. As soluções implementadas, como a configuração do Nginx e a criação do script de monitoramento, resultaram em um sistema funcional, eficiente e automatizado. As dificuldades encontradas durante a implementação foram cruciais para o meu aprendizado em Cloud Computing e DevSecOps.
