@@ -202,7 +202,7 @@ Nesta etapa, será realizado:
         ```
         
 2. Navegue até o diretório `/usr/bin/` e crie um arquivo chamado `monitoramento.sh`. Nele estará o script de monitoramento em Bash (O código está disponível em monitoramento.sh)
-    1. Na variável `webhoook` , insira a url do seu webhook do Discord. [Clique aqui](https://www.alura.com.br/artigos/webhooks?srsltid=AfmBOorKb3Z7HXhrjjGNkf2VZiElJ7RNG6T8XYcPo4FQL43CgX0-sYOC) para mais detalhes de como criar um webhook no seu Discord
+    1. Na variável `webhoook` , insira a url do seu webhook do Discord. [Clique aqui](https://www.alura.com.br/artigos/webhooks?srsltid=AfmBOorKb3Z7HXhrjjGNkf2VZiElJ7RNG6T8XYcPo4FQL43CgX0-sYOC) para mais detalhes de como criar um webhook no Discord
 3. Se o sistema não estiver configurado no horário do Brasil, execute `timedatectl` para verificar e `sudo timedatectl set-timezone America/Sao_Paulo` para alterar para o nosso fuso horário. Assim, data e horário aparecerão corretos nas notificações do Discord
 4. Após a criação do `monitoramento.sh`, será preciso alterar as permissões para que o mesmo seja executado → execute `sudo chmod a+x monitoramento.sh` (`a+x` adiciona a permissão de execução para todos os usuários.)
     
