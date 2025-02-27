@@ -2,7 +2,7 @@
 
 sudo curl --silent localhost > /var/log/requisicoes.log
 
-webhook="https://discord.com/api/webhooks/1342203545050415105/qTVPmtLsruwOGEF_by6WHL2rBfOwjVoQsg-o3bbSJeB7LlGhr6hcMtzHfWH9UgJwtBzT"
+webhook="url_webhook"
 
 data=`sudo date +%d/%m/%Y" - "%H:%M:%S`
 
