@@ -1,0 +1,11 @@
+[Unit]
+Description=Servico de monitoramento do servidor web
+After=network.target
+
+[Service]
+Restart=always
+RestartSec=30
+ExecStart=/usr/bin/monitoramento.sh
+
+[Install]
+WantedBy=multi-user.target
