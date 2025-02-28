@@ -38,15 +38,15 @@ Nesse projeto você irá desenvolver um ambiente de servidor web monitorado, uti
 Antes de iniciar a instância, será necessária a criação da **VPC** (Virtual Private Cloud), que se trata de **uma rede virtual isolada** que permite executar recursos da AWS. Para isso:
 
 1. Realize o cadastro na Amazon AWS; entre no Console de gerenciamento da AWS
-    1. Selecione a região de United States - N. Virginia, que foi escolhida para o projeto. Para mais informações sobre as regiões e suas zonas de disponibilidade [clique aqui](https://docs.aws.amazon.com/pt_br/awsconsolehelpdocs/latest/gsg/select-region.html).
+    1. Selecione a região de United States - N. Virginia, que foi escolhida para o projeto. Para mais informações sobre as regiões e suas zonas de disponibilidade [clique aqui](https://docs.aws.amazon.com/pt_br/awsconsolehelpdocs/latest/gsg/select-region.html)
 2. Clique na barra de pesquisa e digite ‘VPC’
 
 <img src="/images/image.png">
 
-1. Na seção de **Virtual private cloud**, selecione **Your VPCs**. Logo em seguida, clique em **Create VPC.**
-    1. Em VPC settings, selecione **VPC and more**, para pré-visualizar as subnets públicas e privadas, a tabela de rotas  e conexão de redes.
-    2. Dê um nome para a VPC.
-    3. Não altere mais nenhuma configuração padrão, navegue para baixo e clique em **Create VPC.**
+1. Na seção de **Virtual private cloud**, selecione **Your VPCs**. Logo em seguida, clique em **Create VPC**
+    1. Em VPC settings, selecione **VPC and more**, para pré-visualizar as subnets públicas e privadas, a tabela de rotas  e conexão de redes
+    2. Dê um nome para a VPC
+    3. Não altere mais nenhuma configuração padrão, navegue para baixo e clique em **Create VPC**
 
 <img src="/images/image 1.png">
 
@@ -56,11 +56,11 @@ Antes de iniciar a instância, será necessária a criação da **VPC** (Virtual
 
 O Amazon Elastic Compute Cloud (Amazon EC2) oferece uma capacidade de computação escalável sob demanda na Nuvem Amazon Web Services (AWS).
 
-⚠️ Antes da criação da EC2, será necessário criar um **Security Group** para a instância.
+⚠️ Antes da criação da EC2, será necessário criar um **Security Group** para a instância
 
 1. Entre no Console de gerenciamento da AWS
 2. Clique na barra de pesquisa e digite EC2
-3. Em seguida, vá para **Security Groups** e clique em **Create Security Group**.
+3. Em seguida, vá para **Security Groups** e clique em **Create Security Group**
     1. Na seção **Basic Details**, dê um nome para seu security group, uma descrição e selecione a VPC que acabou de criar
         
         <img src="/images/image 2.png">
@@ -76,7 +76,7 @@ O Amazon Elastic Compute Cloud (Amazon EC2) oferece uma capacidade de computaç�
     1. Logo depois, na seção **Outbound rules**, será feita as regras de saída da instância
         1. Crie uma regra de Outbound em Add Rule
         2. Em **Type**, selecione All trafic
-        3. Em **Destination**, selecione Anywhere-IPv4.
+        3. Em **Destination**, selecione Anywhere-IPv4
     
     <img src="/images/image 4.png">
     
@@ -114,7 +114,7 @@ O computador local pode ter um cliente SSH instalado por padrão. Você pode ver
 
 Como a AMI do projeto é baseada em Linux, as futuras configurações de conexão e servidor serão realizadas pelo terminal do Git Bash do Visual Studio Code
 
-1. Por padrão, o terminal do VS Code é o Windows PowerShell. Para trocar para Git Bash, abra o VS Code, vá nas três barrinhas no canto superior esquerdo → clique em Terminal (ou aperte Crtl + J).
+1. Por padrão, o terminal do VS Code é o Windows PowerShell. Para trocar para Git Bash, abra o VS Code, vá nas três barrinhas no canto superior esquerdo → clique em Terminal (ou aperte Crtl + J)
 2. No lado superior direito do terminal, há o tipo de terminal que está utilizando e algumas configurações. Clique na setinha para baixo e selecione **Git Bash**
 
 <img src="/images/image 9.png">
@@ -159,7 +159,7 @@ O **Nginx** (pronunciado “engine ex”) **é um software para servidor web de
 
 Antes da personalização do nosso site (da página default do Nginx), precisamos alterar algumas configurações no arquivo de configuração do Ngnix
 
-1. Vá até o diretório `/etc/nginx/` e crie uma cópia do arquivo `ngnix.conf` .
+1. Vá até o diretório `/etc/nginx/` e crie uma cópia do arquivo `ngnix.conf`
 
 ```bash
  sudo cp nginx.conf nginx.conf.original
@@ -181,7 +181,7 @@ A linha include /etc/nginx/conf.d/serverbru.conf corresponde ao caminho do arqui
     <img src="/images/image 16.png">
     
 4. Dentro da pasta sitebruna.com, crie um arquivo html. Logo após crie uma pasta chamada `css` , onde ficará o estilo da página, e nela crie um arquivo css (Os códigos estão nos arquivos index.html e na pasta css)
-5. Reinicie o Nginx executando `sudo systemctl restart nginx` .
+5. Reinicie o Nginx executando `sudo systemctl restart nginx`
 
 <img src="/images/image 17.png">
 
@@ -195,7 +195,7 @@ Nesta etapa, será realizado:
 ## Criação do script
 
 1. Antes da criação do script, será necessário criar dois arquivos de log: um para o monitoramento e outro para as requisições
-    1. Vá até o diretório `/var/log` e crie dois arquivos: `requisicoes.log` e `monitoramento.log` . O primerio armazena o conteúdo da resposta HTTP recebida do endereço IP da sua máquina e o segundo registra o histórico das verificações de status do servidor.
+    1. Vá até o diretório `/var/log` e crie dois arquivos: `requisicoes.log` e `monitoramento.log` . O primerio armazena o conteúdo da resposta HTTP recebida do endereço IP da sua máquina e o segundo registra o histórico das verificações de status do servidor
         
         ```bash
         sudo touch requisicoes.log monitoramento.log
@@ -204,7 +204,7 @@ Nesta etapa, será realizado:
 2. Navegue até o diretório `/usr/bin/` e crie um arquivo chamado `monitoramento.sh`. Nele estará o script de monitoramento em Bash (O código está disponível em monitoramento.sh)
     1. Na variável `webhoook` , insira a url do seu webhook do Discord. [Clique aqui](https://www.alura.com.br/artigos/webhooks?srsltid=AfmBOorKb3Z7HXhrjjGNkf2VZiElJ7RNG6T8XYcPo4FQL43CgX0-sYOC) para mais detalhes de como criar um webhook no Discord
 3. Se o sistema não estiver configurado no horário do Brasil, execute `timedatectl` para verificar e `sudo timedatectl set-timezone America/Sao_Paulo` para alterar para o nosso fuso horário. Assim, data e horário aparecerão corretos nas notificações do Discord
-4. Após a criação do `monitoramento.sh`, será preciso alterar as permissões para que o mesmo seja executado → execute `sudo chmod a+x monitoramento.sh` (`a+x` adiciona a permissão de execução para todos os usuários.)
+4. Após a criação do `monitoramento.sh`, será preciso alterar as permissões para que o mesmo seja executado → execute `sudo chmod a+x monitoramento.sh` (`a+x` adiciona a permissão de execução para todos os usuários)
     
     <img src="/images/image 18.png">
     
